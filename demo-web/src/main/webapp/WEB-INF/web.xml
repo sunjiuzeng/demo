@@ -22,6 +22,7 @@
 			<param-value>
 				classpath*:spring/springmvc-servlet.xml,
 				classpath*:spring/applicationContext-context.xml,
+				classpath*:spring/applicationContext-cache.xml,
 				classpath*:spring/applicationContext-dataSource.xml
 			</param-value>
 		</init-param>

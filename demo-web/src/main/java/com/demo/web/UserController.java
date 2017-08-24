@@ -17,6 +17,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
+
 	@RequestMapping(value = "get.json")
 	public UserEntity getUserById(@RequestParam("userId") int userId) {
 		return userService.getUserByUserId(userId);

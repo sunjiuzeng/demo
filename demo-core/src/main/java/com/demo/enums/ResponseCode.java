@@ -30,11 +30,13 @@ public enum ResponseCode {
     _043(43, "账户在其他设备登录，您被踢出!", " Your account has been used to log into another device. You have been logged off."),
     _044(44, "对不起，您请求的URL不存在!", "Sorry, the url you requested does not exist."),
 
-    //上传内容提示
+    //上传下载内容提示
     _045(45, "上传成功","Upload successfully"),
     _046(46, "上传失败","Upload failed"),
     _047(47, "超过上传大小限制","Exceed upload size limit"),
-    _048(48, "不支持的扩展名","Unsupported extensions");
+    _048(48, "不支持的扩展名","Unsupported extensions"),
+    _049(49, "下载成功","Download successfully"),
+    _050(50, "下载失败","Download failed");
 
     private int code;
 

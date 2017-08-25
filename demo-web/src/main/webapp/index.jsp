@@ -9,8 +9,20 @@
 <html>
 <head>
     <title>Title</title>
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script>
+        function dowmloadDemo(){
+            window.location.href="/export/exportFileTemplate?endDate="+new Date().getTime();
+        }
+        function dowmloadTemplate(){
+            window.location.href="/template/fileTemplate.xlsx";
+        }
+
+    </script>
 </head>
 <body>
-<a href="/demo/toDemoPage">上传demo<a>
+<a href="/demo/toDemoPage">上传demo</a>
+<a href="javascript:void(0);"e onclick="dowmloadDemo();">下载demo</a>
+<a href="javascript:void(0);"e onclick="dowmloadTemplate();">下载模板</a>
 </body>
 </html>

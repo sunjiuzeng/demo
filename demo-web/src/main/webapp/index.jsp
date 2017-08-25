@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-demo
+<a href="/demo/toDemoPage">上传demo<a>
 </body>
 </html>

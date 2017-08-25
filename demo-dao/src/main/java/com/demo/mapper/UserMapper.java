@@ -4,6 +4,7 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import com.demo.entity.UserEntity;
+import org.elasticsearch.common.inject.Inject;
 
 public interface UserMapper {
 	String BASE_SQL = "name";
@@ -18,5 +19,4 @@ public interface UserMapper {
 		"where id = #{id} limit 1" 
 	})
 	UserEntity findEntityById(@Param("id") int id);
-
 }

@@ -5,7 +5,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Date;
-//import org.springframework.scheduling.quartz.CronTriggerBean;
 
 public class TimedTask {
     private static final Logger logger= LoggerFactory.getLogger(TimedTask.class);

@@ -13,6 +13,7 @@
         <module>demo-dao</module>
         <module>demo-service</module>
         <module>demo-web</module>
+        <module>demo-quartz</module>
     </modules>
 
     <properties>

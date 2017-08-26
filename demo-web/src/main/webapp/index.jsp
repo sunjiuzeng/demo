@@ -21,8 +21,8 @@
     </script>
 </head>
 <body>
-<a href="/demo/toDemoPage">上传demo</a>
-<a href="javascript:void(0);"e onclick="dowmloadDemo();">下载demo</a>
-<a href="javascript:void(0);"e onclick="dowmloadTemplate();">下载模板</a>
+<a href="/demo/toDemoPage">上传demo</a><br>
+<a href="javascript:void(0);"e onclick="dowmloadDemo();">下载demo</a><br>
+<a href="javascript:void(0);"e onclick="dowmloadTemplate();">下载模板</a><br>
 </body>
 </html>

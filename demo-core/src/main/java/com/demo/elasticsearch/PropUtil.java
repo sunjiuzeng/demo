@@ -1,5 +1,9 @@
 package com.demo.elasticsearch;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.util.ResourceUtils;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,11 +11,7 @@ import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public class PropUtil {
-	
 
 	private final static Logger logger = LoggerFactory.getLogger(PropUtil.class);
 
@@ -24,8 +24,8 @@ public class PropUtil {
 		InputStream in = null;
 		
 		try {
-			
-			in = PropUtil.class.getResourceAsStream("../../es.properties");
+			in = ResourceUtils.getURL("classpath:es.properties").openStream();
+//			in = PropUtil.class.getResourceAsStream("../../es.properties");
 			prop.load(in);
 			
 		} catch (FileNotFoundException e1) {
